@@ -6,6 +6,7 @@ img {
 table {
   padding: 100px;
   width: 700px;
+  background-color: #cc6600;
 }
 
 tr {
@@ -16,5 +17,8 @@ td {
   font-family: Homemade Apple;
   align-items: center;
   width: 25%;
-  background-color: #cc6600;
+}
+
+.banner {
+  padding-left: 50px;
 }
