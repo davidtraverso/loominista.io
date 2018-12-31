@@ -8,8 +8,12 @@ table {
   width: 700px;
 }
 
+tr {
+  padding-left: 50px;
+}
+
 td {
   font-family: Homemade Apple;
   align-items: center;
-  padding-left: 50px;
+  width: 25%;
 }
