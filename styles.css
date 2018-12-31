@@ -4,16 +4,17 @@ img {
 }
 
 table {
-  padding: 100px 0px 0px 0px;
+  padding: 100px;
   width: 700px;
 }
 
 tr {
-  padding-left: 50px;
+  padding: 50px;
 }
 
 td {
   font-family: Homemade Apple;
   align-items: center;
   width: 25%;
+  background-color: #cc6600;
 }
