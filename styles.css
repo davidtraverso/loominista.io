@@ -5,9 +5,11 @@ img {
 
 table {
   padding: 10px 0px 0px 0px;
+  width: 700px;
 }
 
 td {
   font-family: Homemade Apple;
   align-items: center;
+  width: auto;
 }
