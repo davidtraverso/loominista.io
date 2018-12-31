@@ -3,7 +3,11 @@ img {
   width=100%
 }
 
-ul {
+table {
+  padding: 10px 0px 0px 0px;
+}
+
+td {
   font-family: Homemade Apple;
-  list-style: none;
+  align-items: center;
 }
