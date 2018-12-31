@@ -4,7 +4,7 @@ img {
 }
 
 table {
-  width: 700px;
+
 }
 
 tr {
@@ -15,8 +15,4 @@ td {
   font-family: Homemade Apple;
   align-items: center;
   width: 25%;
-}
-
-.banner {
-    background-color: #cc6600;
 }
