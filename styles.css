@@ -10,5 +10,5 @@ ul {
 
 li {
   font-family: Homemade Apple;
-  display: inline;
+  float: left;
 }
