@@ -12,6 +12,7 @@ nav {
   margin: 0 auto;
   padding: 0;
   width: 100%;
+  height: 10em;
 }
 #logo {
   height: 10em;
@@ -22,7 +23,7 @@ nav {
 }
 
 img {
-  max-height: 100%;
+  max-height: fit-content;
 }
 
 ul {
