@@ -8,14 +8,19 @@ body {
   padding: 0;
 }
 
+header {
+  margin: 0;
+  padding: 0;
+}
 nav {
   margin: 0 auto;
   padding: 0;
   width: 100%;
-  height: 10em;
+  max-height: 10em;
 }
+
 #logo {
-  height: 10em;
+  max-height: 10em;
   padding: 1em 0 0 0;
   margin: 0px 0px;
   float: left;
@@ -23,12 +28,12 @@ nav {
 }
 
 img {
-  max-height: fit-content;
+  max-height: 10em;
 }
 
 ul {
   margin: 0;
-  list-style: none;
+  list-style: none; 
   display: block;
   width: 100%;
 }
@@ -46,11 +51,7 @@ li a:hover {
   text-decoration: underline;
 }
 
-main {
-  margin: 0;
-  padding: 0;
-  display: inline;
-}
+
 
 /* [class*="col-"] {
   float: left;
