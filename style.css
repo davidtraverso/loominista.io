@@ -1,78 +1,178 @@
-html, body {
-    background: white center center no-repeat;
-    height: 100%;
-    background-size: cover;
+html,
+body {
+  background: white center center no-repeat;
+  height: 100%;
+  background-size: cover;
 }
 
-@media(max-width:786px) {
+@media (max-width: 786px) {
+  #logo img {
+    width: 50%;
+  }
 
-    #logo img {
-        width: 50%;
-    }
-
-    #icons .fab {
-        margin: 0 !important;
-        padding: 0 !important;
-    }
+  #icons .fab {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
 }
 
 #logo img {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 #intro p {
-    color:rgb(97, 93, 93);
-    text-align: center;
-    font-family: 'Just Another Hand', cursive;
-    font-size: 3em;
-    margin: 20px auto;
+  color: rgb(97, 93, 93);
+  text-align: center;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 3em;
+  margin: 20px auto;
 }
 
 #icons {
-    text-align: center;
+  text-align: center;
 }
 
 #icons .fab {
-    color:rgb(177, 177, 177);
-    padding: 0 10px;
-    position: relative;
-    bottom: 0;
-    transition: all 0.2s ease-in-out;
+  color: rgb(177, 177, 177);
+  padding: 0 10px;
+  position: relative;
+  bottom: 0;
+  transition: all 0.2s ease-in-out;
 }
 
 #icons .twitter:hover {
-    color: #6cadde;
-    bottom: 5px;
+  color: #6cadde;
+  bottom: 5px;
 }
 
 #icons .facebook:hover {
-    color: #3b5998;
-    bottom: 5px;
+  color: #3b5998;
+  bottom: 5px;
 }
 
 #icons .google:hover {
-    color: #ea4335;
-    bottom: 5px;
+  color: #ea4335;
+  bottom: 5px;
 }
 
 #icons .instagram:hover {
-    color: #517fa6;
-    bottom: 5px;
+  color: #517fa6;
+  bottom: 5px;
 }
 
 #signup {
-    text-align: center;
+  text-align: center;
 }
 
 #signup .form-inline {
-    display: block;
+  display: block;
 }
 
 #signup .btn {
-    background: rgba(161, 186, 226, 0.5);
-    color: white;
+  background: rgba(161, 186, 226, 0.5);
+  color: white;
 }
 
 #signup .btn:hover {
-    background: rgba(37, 165, 82, 1);
+  background: rgba(37, 165, 82, 1);
+}
+
+/* Weavings */
+.main {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 25% 65% 10%;
+  grid-gap: 1em;
+  font-family: 'Homemade Apple', cursive;
+  font-size: 1.2rem;
+  color: rgb(97, 93, 93);
+}
+
+.sidebar {
+  position: sticky;
+  top: 0;
+}
+
+nav img {
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0.2rem 1rem;
+}
+
+nav a:hover {
+  transform: scale(1.1);
+  transition: all ease 300ms;
+}
+
+ul a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.wrapper img {
+  width: 100%;
+}
+
+.social ul {
+  list-style: none;
+  padding: 0;
+  position: fixed;
+}
+
+.social li {
+  text-align: center;
+  display: inline-block;
+}
+
+.social a:hover {
+  transform: scale(1.1);
+  transition: all ease 300ms;
+}
+
+footer {
+    margin: 1em;
+    text-align: center;
+    border-top: 1px #eee solid;
+}
+
+@media(min-width: 1400px){
+    .logo {
+        margin: auto;
+        width: 70%;
+        text-align: center;
+    }
+    .main {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 940px){
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      
+      .wrapper img {
+        width: 100%;
+      }
+}
+
+@media(max-width: 620px){
+    .main {
+        font-size: 1rem;
+    }
 }
