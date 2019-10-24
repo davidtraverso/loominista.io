@@ -124,6 +124,8 @@ ul a {
 }
 
 .wrapper img {
+  object-fit: cover;
+  height: 300px;
   width: 100%;
 }
 
@@ -222,6 +224,15 @@ footer {
 }
   
   @media (max-width: 620px) {
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  
+    .wrapper img {
+      width: 100%;
+    }
+    
     .main {
       font-size: 1rem;
     }
