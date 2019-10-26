@@ -183,60 +183,103 @@ footer {
     'words photo';
 }
 
+/* Contact */
+.form {
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  background: rgba(217, 212, 224, 0.37);
+}
 
+label {
+  display: inline-block;
+  width: 90x;
+  text-align: right;
+}
+
+.form input,
+.form textarea {
+  display: inline-block;
+  font-size: 1em;
+  font-family: 'Caveat', cursive;
+  width: 100%;
+  resize: none;
+  border: 1px solid #ccc;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 10em;
+}
+
+button:hover {
+  box-shadow: #ea4335;
+}
+
+/* Media queries */
 @media (min-width: 1400px) {
-    .logo {
-      margin: auto;
-      width: 70%;
-      text-align: center;
-    }
-    .main {
-      font-size: 1.5rem;
-    }
-  
-    .photo {
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 368px));
-    }
+  .logo {
+    margin: auto;
+    width: 70%;
+    text-align: center;
   }
-  
-  @media (max-width: 940px) {
-    .wrapper {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .wrapper img {
-      width: 100%;
-    }
-  
-    .weavings, .macrame {
-      grid-template-areas:
-        'heading'
-        'words'
-        'photo';
-    }
+  .main {
+    font-size: 1.5rem;
+  }
 
-    .weavings img, .macrame img {
-       width: 42%
+  .photo {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 368px));
   }
 }
-  
-  @media (max-width: 620px) {
-    .wrapper {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-  
-    .wrapper img {
-      width: 100%;
-    }
-    
-    .main {
-      font-size: 1rem;
-    }
-    .weavings img, .macrame img {
-        width: 80%
-   }
+
+@media (max-width: 940px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
+
+  .wrapper img {
+    width: 100%;
+  }
+
+  .weavings,
+  .macrame {
+    grid-template-areas:
+      'heading'
+      'words'
+      'photo';
+  }
+
+  .weavings img,
+  .macrame img {
+    width: 42%;
+  }
+}
+
+@media (max-width: 620px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper img {
+    width: 100%;
+  }
+
+  .main {
+    font-size: 1rem;
+  }
+  .weavings img,
+  .macrame img {
+    width: 80%;
+  }
+
+  .form {
+    width: 280px;
+  }
+}
